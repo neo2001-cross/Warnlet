@@ -2,6 +2,9 @@ import './App.css';
 import Sidebar from './component/Sidebar.js';
 import Dashboard from './component/Dashboard.js'
 import {BrowserRouter, Routes, Route } from 'react-router-dom'
+import MoneySource from './component/MoneySource';
+import History from './component/History';
+import Transaction from './component/Transaction';
 
 function App() {
   return (
@@ -10,9 +13,9 @@ function App() {
       <Sidebar />
       <Routes>
         <Route exact path='/' element={<Dashboard/>}/>
-        <Route path='/moneytransaction' component={Dashboard}/>
-        <Route path='/history' component={Dashboard}/>
-        <Route path='/transaction' component={Dashboard} />
+        <Route path='/moneysource' element={<MoneySource />}/>
+        <Route path='/history' element={<History />}/>
+        <Route path='/transaction' element={<Transaction />} />
       </Routes>
     </div>
   </BrowserRouter>

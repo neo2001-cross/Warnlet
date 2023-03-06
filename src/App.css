@@ -5,8 +5,11 @@
   height: 100vh;
 }
 
-.dashboardContainer{
+.mainContainer{
   flex: 5;
+  padding: 20px 30px;
+  display: flex;
+  flex-direction: column;
 }
 
 .sidebarContainer{

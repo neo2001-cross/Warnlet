@@ -1,0 +1,19 @@
+.informationHeader{
+  width: 100%;
+  flex: 1;
+}
+
+.cashPanel{
+  flex: 2;
+  height: 100%;
+}
+
+.statistic{
+  flex: 4;
+  height: 100%;
+}
+
+.tablePanel{
+  flex: 3;
+  height: 100%;
+}
