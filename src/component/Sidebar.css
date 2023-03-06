@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+.sidebarContainer{
+    background-color: #00024C;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebarAvatar{
+    height: 75px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    justify-content: space-around;
+    color: white;
+    padding: 10px;
+    border-bottom: 1px solid white;
+}
+
+.sidebarGreetings{
+    font-family: "Dancing Script", cursive;
+}
+
+.sidebarContentList{
+    height: 100%;
+    width: 100%;
+}
+
+.sidebarButton {
+    text-decoration: none;
+    color: white;
+    width: 100%;
+}
+
+.sidebarButtonInside{
+    display: flex;
+    margin: 10px 0px;
+    align-items: center;
+    background-color: white;
+    color: black;
+    height: 50px;
+}
+
+.sidebarButtonInside * {
+    margin: 10px 10px;
+}
