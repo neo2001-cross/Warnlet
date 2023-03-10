@@ -7,12 +7,15 @@ import History from './component/History';
 import Transaction from './component/Transaction';
 
 function App() {
+
+  const money = 200000
+  
   return (
   <BrowserRouter>
     <div className="App">
       <Sidebar />
       <Routes>
-        <Route exact path='/' element={<Dashboard/>}/>
+        <Route exact path='/' element={<Dashboard money={money}/>}/>
         <Route path='/moneysource' element={<MoneySource />}/>
         <Route path='/history' element={<History />}/>
         <Route path='/transaction' element={<Transaction />} />

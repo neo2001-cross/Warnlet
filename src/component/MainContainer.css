@@ -9,6 +9,7 @@
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
   border-bottom: 1px solid black;
+  padding-bottom: 10px;
 }
 
 .cashPanel{
@@ -21,6 +22,8 @@
 .statisticPanel{
   flex: 4;
   height: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .tablePanel{
@@ -35,9 +38,50 @@
 }
 
 .cashTag{
-  width: 340px;
-  background-color: white;
+  width: 30%;
   margin-top: 10px;
+  background-color: white;
   border-radius: 10px;
   padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cashTag h1{
+  font-size: 40px;
+}
+
+
+.cashTag p{
+  font-size: 25px;
+}
+
+.statisticTable{
+  background-color: white;
+  margin: 10px 0px;
+  border-radius: 10px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.leftPanel{
+  margin-right: 10px;
+}
+
+.rightPanel{
+  margin-left: 10px;
+}
+
+.statisticTable .tableTitle{
+  font-size: 25px;
+}
+
+.statisticTable .tableMainNumber{
+  font-weight: 700;
+  font-size: 75px;
 }

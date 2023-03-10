@@ -4,11 +4,11 @@ import Statistic from "./Statistic"
 import TablePanel from "./TablePanel"
 import "./MainContainer.css"
 
-function Dashboard() {
+function Dashboard( {money} ) {
   return(
     <div className="mainContainer">
       <InformationHeader />
-      <CashPanel />
+      <CashPanel money={money}/>
       <Statistic />
       <TablePanel />
     </div>
