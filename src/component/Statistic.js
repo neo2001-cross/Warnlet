@@ -17,9 +17,27 @@ function Statistic() {
 
   useEffect(() => {
     const currentDate = new Date().getDate()
-    const lastDate = date.slice(0,2)
+    const lastDate = Number(date.slice(0,2))
+    let remainingDate = lastDate - currentDate
+    const currentMonth = new Date().getMonth() + 1
+    const nextMonth = Number(date.slice(3,5))
+    const day31Month = [1,3,5,7,8,10,12]
+    if(currentMonth === nextMonth){
+      remainingDate = lastDate - currentDate
+    }
+    else{
+      if (currentMonth === 2){
+        remainingDate = 28 - currentDate + lastDate
+      }
+      else if (day31Month.indexOf(currentMonth)){
+        remainingDate = 31 - currentDate + lastDate 
+      }
+      else{
+        remainingDate = 30 - currentDate + lastDate
+      }
+    }
     
-    const remainingDate = Number(lastDate) - currentDate
+
     setDailySpent(Math.floor(total/remainingDate))
   },[total])
 
@@ -32,7 +50,7 @@ function Statistic() {
       <div className="statisticTable rightPanel">
         <p className="tableTitle">Daily Cost</p>
         <p className="tableMainNumber">{dailySpent}</p>
-        <p className="dateNumber">{date}</p>
+        <p className="dateNumber">Next day salary: {date}</p>
       </div>
     </div>
   )

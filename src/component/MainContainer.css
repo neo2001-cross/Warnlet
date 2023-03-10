@@ -20,14 +20,14 @@
 }
 
 .statisticPanel{
-  flex: 4;
+  flex: 3;
   height: 100%;
   display: flex;
   justify-content: space-between;
 }
 
 .tablePanel{
-  flex: 3;
+  flex: 4;
   height: 100%;
 }
 
@@ -45,8 +45,36 @@
   padding: 10px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+}
+
+.cashTagControlButton{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.cashTagButton {
+  border: none;
+  width: 30%;
+  height: 30px;
+  border-radius: 5px;
+}
+
+.cashTagAddMoneyButton:hover{
+  background-color: green;
+  color: white;
+}
+
+.cashTagTransferButton:hover{
+  background-color: blue;
+  color: white;
+}
+
+.cashTagReduceButton:hover{
+  background-color: red;
+  color: white;
 }
 
 .cashTag h1{
@@ -85,3 +113,23 @@
   font-weight: 700;
   font-size: 75px;
 }
+
+.tablePanel{
+  display: flex;
+  width: 100%;
+}
+
+.historyPanel{
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.transactionHistory{
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
+
